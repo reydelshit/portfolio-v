@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook  } from '@fortawesome/free-brands-svg-icons'
-import { LightSpeed, Bounce } from 'react-reveal';
+import { Bounce } from 'react-reveal';
 import './css/blog.css'
 import Blog from './Blog';
 
@@ -13,15 +13,15 @@ const Home = () => {
     return ( 
         <section className='home__introduction' id='home'>
               <div className='home__inside__container'>
-                <LightSpeed left>
+                <Bounce>
                   <h1 className='hello'>Hello.</h1>
-                </LightSpeed>  
-                <LightSpeed left delay={250}>
+                </Bounce>  
+                <Bounce>
                   <h2 className='myName'>      
                     I'm <span className='name'>Reydel Ocon</span>.
                   </h2>
-                  </LightSpeed> 
-               <LightSpeed left delay={350}>
+                  </Bounce> 
+               <Bounce>
                 <p className='description'>
                   I like <span className='important__text'>building stuff</span>, writing <span className='important__text'>blog posts</span>, contributing to
                   <span className='important__text'> open source</span>, watching <span className='important__text'>anime</span> and reading<span className='important__text'> books</span>.
@@ -53,7 +53,7 @@ const Home = () => {
                   As of now, I have watched <span className='important__text'>40+ of animes</span> and my favorite is <span className='important__text'>One Piece</span>.
 
                 </p>
-                </LightSpeed>
+                </Bounce>
                 <div class='icons__yow'>
                 <Bounce top>
                     <a href="https://github.com/reydelshit" 

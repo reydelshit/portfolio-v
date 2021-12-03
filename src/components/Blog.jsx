@@ -72,7 +72,7 @@ fetchPosts = async () => {
                 title="Github"
                 target="_blank"
                 rel='noreferrer'
-                >View site code   <FontAwesomeIcon icon={ faGithub }/>
+                >View the site's code   <FontAwesomeIcon icon={ faGithub }/>
               </a>
             </div>
            <div className='blog__father__container'>
