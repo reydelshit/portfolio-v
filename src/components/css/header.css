@@ -122,7 +122,8 @@ button{
     }
 
     .hamburger {
-
+        
+        visibility: collapse;
         z-index: 2;
         display: flex;
 

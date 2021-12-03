@@ -1,29 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
-:root{
-    --main-font-poppins345: 'Poppins', sans-serif;
-    --main-color: hsla(32, 100%, 45%, 1);
-    --text-color: hsla(0, 0%, 99%, 0.9);
-    --DefaultColor: hsla(173, 96%, 100%, 0.9);
-    --blog-subtitle: hsla(0, 3%, 85%, 0.9);
-    --menu-color: hsla(173, 96%, 100%, 0.9);
-
-
-    --darkbackground: #22272e;
-    --text-white: hsla(0, 0%, 99%, 0.9);
-    --whitebackground: hsla(0, 0%, 99%, 0.9);
-
-    --subtitle: hsla(0, 3%, 85%, 0.9);
-}
 
 
 .blog__container{
 
     margin: 0;
     word-wrap: break-word;
-    width: 40rem;
-    padding: 5rem 2em;
-    height: 100%;
+    width: 80%;
+    padding: 5rem 5em;
 
 }
 
@@ -62,6 +46,7 @@
 }
 
 .blog__holder{
+    padding: 0 4rem 0 0;
     margin-bottom: 1rem;
 }
 

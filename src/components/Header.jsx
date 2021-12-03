@@ -36,12 +36,12 @@ const Header = () => {
                { menu ? <FontAwesomeIcon icon={ faTimes } /> :  <FontAwesomeIcon icon={ faBars } />}
               </button>
               <div className={ menu ? "renderMenu" : "menu"}>
-                <Bounce when={true}>
+                {/* <Bounce when={true}>
                 <Link to='/' onClick={() => setMenu(false)}>home</Link>
                 <Link to='/projects' onClick={() => setMenu(false)}>projects</Link>
                 <Link to='/techs'onClick={() => setMenu(false)}>techs</Link>
                 <Link to='/contact'onClick={() => setMenu(false)}>contact</Link>
-                </Bounce>
+                </Bounce> */}
             </div>
             <button className='changeBG__btn' onClick={changeBg}>
                { bg ? <img src={ Moon } alt='moon' className="off"/> :  <img src={Bulb} alt='bulb' className="on" />}

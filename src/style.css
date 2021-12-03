@@ -42,7 +42,7 @@ body {
 
 }
 
-body::after{
+body::before{
 
     content: '';
     background-color: #ff4e00;
@@ -55,18 +55,16 @@ body::after{
 
 }
 
-/* body::before{
+/* body::after{
 
     content: '';
     background-color: #ff4e00;
     background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);    
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 0.4rem;
-    height: 100%;
-    z-index: 3;
-
+    bottom: 0;
+    width: 100%;
+    height: 0.4rem;
+    z-index: 1;
 
 } */
 
@@ -94,23 +92,22 @@ body.darkmode{
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 5rem;
-    width: 100vw;
-    height: 100%;
-    padding: 0 10rem;
+    width: 100%;
+    padding: 0 5rem;
 }
 
 .home__inside__container{
 
-    padding-top: 10rem;
-    width: 30rem;
+    padding-top: 5rem;
+    width: 60%;
+    height: 700px;
 }
 
 .home__inside__container > *{
     
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 h1{
@@ -152,6 +149,13 @@ p {
 
 }
 
+.important__text, .important__text a{
+
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 .name:hover::after{
 
     transform: scale(1, 1);
@@ -182,7 +186,6 @@ p {
 
 @media screen and (max-width: 995px){
 
-    
     .home__introduction{
 
         flex-direction: column;
@@ -203,9 +206,6 @@ p {
         font-size: 1rem;
     }
     
-    .seperator{
-        width: 70%;
-    }
 
     
 }
