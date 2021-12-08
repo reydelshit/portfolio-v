@@ -1,9 +1,9 @@
-import './css/blog.css'
+// import './css/blog.css'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWifi } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
+import '../index.css';
 import { TailSpin } from 'svg-loaders-react'
 
 
@@ -63,29 +63,31 @@ fetchPosts = async () => {
 
 
     render() {
-      if (this.state.loading) return <div className="spinner"><TailSpin trokeOpacity=".125" /></div>;
+      if (this.state.loading) return <div className="flex w-9/12 items-center justify-center h-5/6"><TailSpin trokeOpacity=".125" /></div>;
       return(
-        <div className='blog__container'>
-            <div className='blog__header'>
-              <h2 className='blog__title'>{this.state.posts.length} POSTS <FontAwesomeIcon icon={ faWifi } className='blog__wifi'/></h2>
+        <div className='flex flex-col justify-center h-full md:w-9/12 md:px-4'>
+            <div className='flex justify-between mb-8'>
+              <h2 className='font-medium text-sm'>{this.state.posts.length} POSTS <FontAwesomeIcon  className='transform rotate-12' icon={ faWifi }/></h2>
               <a href='https://github.com/reydelshit'
+                className='text-xs hover:text-primary'
                 title="Github"
                 target="_blank"
                 rel='noreferrer'
-                >View the site's code   <FontAwesomeIcon icon={ faGithub }/>
+                >View the site's code   <FontAwesomeIcon icon={ faGithub } className='transform rotate-20'/>
               </a>
             </div>
-           <div className='blog__father__container'>
-            {this.state.posts.map((post, index) => <div className='blog__holder'>
-              <span className='post__date'>{new Intl.DateTimeFormat("en-GB", {
+           <div className=''>
+            {this.state.posts.map((post, index) => <div>
+              <span className='text-sm font-extralight'>{new Intl.DateTimeFormat("en-GB", {
                 year: "numeric",
                 month: "long",
                 day: "2-digit"
              }).format(new Date(post.dateAdded))}</span>
-              <a key={index} href={`https://reydelp.hashnode.dev/${post.slug}`} >
+              <a key={index} href={`https://reydelp.hashnode.dev/${post.slug}`} 
+              className='block text-lg font-bold hover:text-primary' >
               {post.title}
               </a>
-              <p>{post.brief.slice(0, 200)}</p>
+              <p className='mb-5 text-sm leading-6'>{post.brief.slice(0, 200)}</p>
               </div>
               )}
            </div>        

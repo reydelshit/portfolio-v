@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook  } from '@fortawesome/free-brands-svg-icons'
 import { Bounce } from 'react-reveal';
-import './css/blog.css'
+import '../index.css';
 import Blog from './Blog';
 
 
@@ -11,37 +11,38 @@ import Blog from './Blog';
 const Home = () => {
 
     return ( 
-        <section className='home__introduction' id='home'>
-              <div className='home__inside__container'>
+        <section className='flex flex-col gap-24 px-5 md:px-20 font-benPoppins md:flex-row bg-background'>
+              <div className='flex justify-center h-85 flex-col md:w-5/12 '>
                 <Bounce>
-                  <h1 className='hello'>Hello.</h1>
+                  <h1 className='text-5xl font-bold mb-5'>Hello.</h1>
                 </Bounce>  
                 <Bounce>
-                  <h2 className='myName'>      
-                    I'm <span className='name'>Reydel Ocon</span>.
+                  <h2 className='text-4xl font-bold mb-4'>      
+                    I'm <span className='important'>Reydel Ocon</span>.
                   </h2>
                   </Bounce> 
                <Bounce>
-                <p className='description'>
-                  I like <span className='important__text'>building stuff</span>, writing <span className='important__text'>blog posts</span>, contributing to
-                  <span className='important__text'> open source</span>, watching <span className='important__text'>anime</span> and reading<span className='important__text'> books</span>.
+                <p className=''>
+                  I like <span className='important'>building stuff</span>, writing <span className='important'>blog posts</span>, contributing to
+                  <span className='important'> open source</span>, watching <span className='important'>anime</span> and reading<span className='important'> books</span>.
 
                   <br />
                   <br />
 
-                  I love working with <span className='important__text'>React</span>, <span className='important__text'>TypeScript</span>, <span className='important__text'>Tailwind CSS</span> and <span className='important__text'>SASS</span>.
+                  I love working with <span className='important'>React</span>, <span className='important'>TypeScript</span>, <span className='important'>Tailwind CSS</span> and <span className='important__text'>SASS</span>.
 
                   <br />
 
-                  I do designing on <span className='important__text'>Figma</span>.
+                  I do designing on <span className='important'>Figma</span>.
 
                   <br />
+                  
      
-                  I'm scared of <span className='important__text'>dogs</span> but I love <span className='important__text'>cats</span>.
+                  I'm scared of <span className='important'>dogs</span> but I love <span className='important'>cats</span>.
 
                   <br />
 
-                  I stored my projects on <span className='important__text'>
+                  I stored my projects on <span className='important'>
                     <a href="https://github.com/reydelshit" 
                     title="Github"
                     target="_blank"
@@ -50,25 +51,25 @@ const Home = () => {
                   <br />
                   <br />
 
-                  As of now, I have watched <span className='important__text'>40+ of animes</span> and my favorite is <span className='important__text'>One Piece</span>.
+                  As of now, I have watched <span className='important'>40+ of animes</span> and my favorite is <span className='important'>One Piece</span>.
 
                 </p>
                 </Bounce>
-                <div class='icons__yow'>
+                <div class='flex justify-between text-4xl w-20 mt-10'>
                 <Bounce top>
                     <a href="https://github.com/reydelshit" 
-                    className='soc__icons'
                     title="Github"
                     target="_blank"
-                    rel='noreferrer'>
-                      <FontAwesomeIcon icon={faGithub } />
+                    rel='noreferrer'
+                    className='hover:text-primary'>
+                      <FontAwesomeIcon icon={faGithub}/>
                     </a>
                   <a
                     href="https://facebook.com/reydelshit"
-                    className='soc__icons'
                     title="Facebook"
                     target="_blank"
                     rel='noreferrer'
+                    className='hover:text-primary'
                     >
                         <FontAwesomeIcon icon={ faFacebook } />
                     </a>  
