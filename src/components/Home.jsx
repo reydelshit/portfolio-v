@@ -29,7 +29,7 @@ const Home = () => {
                   <br />
                   <br />
 
-                  I love working with <span className='important'>React</span>, <span className='important'>TypeScript</span>, <span className='important'>Tailwind CSS</span> and <span className='important'>SASS</span>.
+                  I love working with <span className='important'>React</span>, <span className='important'>Vue</span>, <span className='important'>Node js</span>, <span className='important'>Express</span>, <span className='important'>TypeScript</span>, <span className='important'>Tailwind CSS</span> and <span className='important'>SASS</span>.
 
                   <br />
 
