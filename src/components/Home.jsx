@@ -24,19 +24,14 @@ const Home = () => {
                <Bounce>
                 <p className=''>
                   I like <span className='important'>building stuff</span>, writing <span className='important'>blog posts</span>, contributing to
-                  <span className='important'> open source</span>, watching <span className='important'>anime</span> and reading<span className='important'> books</span>.
+                  <span className='important'> open source</span>(not really), watching <span className='important'>anime</span> and reading<span className='important'> books</span>.
 
                   <br />
                   <br />
 
                   I love working with <span className='important'>React</span>, <span className='important'>Vue</span>, <span className='important'>Node js</span>, <span className='important'>Express</span>, <span className='important'>TypeScript</span>, <span className='important'>Tailwind CSS</span> and <span className='important'>SASS</span>.
 
-                  <br />
-
-                  I do designing on <span className='important'>Figma</span>.
-
-                  <br />
-                  
+       
      
                   I'm scared of <span className='important'>dogs</span> but I love <span className='important'>cats</span>.
 
